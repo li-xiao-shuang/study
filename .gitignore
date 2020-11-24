@@ -1,0 +1,28 @@
+
+target/
+*.iml__*
+!.mvn/wrapper/maven-wrapper.jar
+.DS_Store
+release.properties
+*.releaseBackup
+*.log
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.imllogs/
+*.xml.versionsBackup
+*/.DS_Store
+.DS_Store
+*.ipr
+
+### vscode ###
