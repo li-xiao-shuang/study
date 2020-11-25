@@ -20,6 +20,7 @@
 
     <modules>
         <module>study-java-spi</module>
+        <module>study-jvm-hook</module>
     </modules>
 
 
