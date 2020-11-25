@@ -8,12 +8,13 @@ public class JvmHookDemo {
 
     public static void main(String[] args) throws InterruptedException {
 
+        //自己实现的钩子
         StudyShtudownHook instance = StudyShtudownHook.getInstance();
-
+        //将需要关闭的资源放到钩子里
         StudyResource studyResource = new StudyResource();
         instance.registerAutoCloseable(studyResource);
 
-        //先注册钩子
+        //向jvm注册钩子
         Runtime.getRuntime().addShutdownHook(instance);
 
         System.out.println("执行业务逻辑。。。。");
