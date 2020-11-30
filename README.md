@@ -1,4 +1,4 @@
 
 
 - [JAVA SPI 原理](study-java-spi)
-- [ShutdownHook Jvm关闭钩子原理](study-jvm-hook)
+- [Java虚拟机关闭钩子(Shutdown hook)](study-jvm-hook)
