@@ -1,8 +1,5 @@
 package leetcode.editor.cn;
 
-import java.util.HashMap;
-import java.util.Map;
-
 //给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
 //
 // 说明： 
@@ -24,22 +21,17 @@ import java.util.Map;
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public static int singleNumber(int[] nums) {
-        Map<Integer, Integer> countMap = new HashMap<>();
+        int result = 0;
         for (int num : nums) {
-            countMap.put(num, countMap.getOrDefault(num, 0) + 1);
+            result = result^num;
         }
-        for (Map.Entry<Integer, Integer> integerIntegerEntry : countMap.entrySet()) {
-            if (integerIntegerEntry.getValue() == 1) {
-                return integerIntegerEntry.getKey();
-            }
-        }
-        return 0;
+        return result;
     }
 
     public static void main(String[] args) {
-        int[] a = {4, 1, 2, 1, 2};
-        int i = singleNumber(a);
-        System.out.println(i);
+        int[] nums = {4, 1, 2, 1, 2};
+        int result = singleNumber(nums);
+        System.out.println(result);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
