@@ -21,6 +21,7 @@
     <modules>
         <module>study-java-spi</module>
         <module>study-jvm-hook</module>
+        <module>study-algorithm</module>
     </modules>
 
 
