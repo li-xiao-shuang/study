@@ -24,6 +24,7 @@ class Solution {
         int result = 0;
         for (int num : nums) {
             result = result^num;
+            System.out.println(result);
         }
         return result;
     }
