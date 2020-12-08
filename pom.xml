@@ -22,7 +22,7 @@
         <module>study-java-spi</module>
         <module>study-jvm-hook</module>
         <module>study-algorithm</module>
-        <module>design-patterns</module>
+        <module>study-design-patterns</module>
     </modules>
 
 
