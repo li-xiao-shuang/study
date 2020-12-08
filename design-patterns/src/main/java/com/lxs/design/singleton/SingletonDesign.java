@@ -1,4 +1,4 @@
-package com.lxs.design;
+package com.lxs.design.singleton;
 
 import lombok.Data;
 import lombok.Getter;
