@@ -23,6 +23,7 @@
         <module>study-jvm-hook</module>
         <module>study-algorithm</module>
         <module>study-design-patterns</module>
+        <module>study-concurrency</module>
     </modules>
 
 
