@@ -11,5 +11,13 @@
 
     <artifactId>study-concurrency</artifactId>
 
+    <dependencies>
+        <!--查看对象内存结构-->
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.10</version>
+        </dependency>
+    </dependencies>
 
 </project>
