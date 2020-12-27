@@ -1,5 +1,5 @@
-FROM node:8.4
-COPY . /app
-WORKDIR /app
-RUN npm install --registry=https://registry.npm.taobao.org
-EXPOSE 3000
+FROM java:11
+VOLUME /Users/lixiaoshuang/logs
+ADD target/study-docker-0.0.1-SNAPSHOT.jar docker.jar
+RUN bash -c 'touch /docker.jar'
+ENTRYPOINT ["java","-jar","/docker.jar"]
